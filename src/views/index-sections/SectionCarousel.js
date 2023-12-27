@@ -34,19 +34,24 @@ import {
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg"),
-    altText: "Somewhere",
-    caption: "Somewhere",
+    src: require("assets/img/bees/education.jpg"),
+    altText: "Education Event",
+    // caption: "Education Event",
   },
   {
-    src: require("assets/img/federico-beccari.jpg"),
-    altText: "Somewhere else",
-    caption: "Somewhere else",
+    src: require("assets/img/bees/bee-wood-header.jpg"),
+    altText: "Bees in hive",
+    // caption: "Bees in hive",
   },
   {
-    src: require("assets/img/joshua-stannard.jpg"),
-    altText: "Here it is",
-    caption: "Here it is",
+    src: require("assets/img/bees/garden3.jpg"),
+    altText: "Garden Project",
+    // caption: "Garden Project",
+  },
+  {
+    src: require("assets/img/bees/bee-upclose.jpg"),
+    altText: "Bees in hive",
+    // caption: "Bees in hive",
   },
 ];
 
@@ -97,7 +102,7 @@ function SectionCarousel() {
                         onExited={onExited}
                         key={item.src}
                       >
-                        <img src={item.src} alt={item.altText} />
+                        <img style={{'max-height': '530px'}}  src={item.src} alt={item.altText} />
                         <CarouselCaption
                           captionText={item.caption}
                           captionHeader=""

@@ -4785,7 +4785,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   color: #fff;
 }
 .carousel-control {
-  background-color: #f5593d;
+  background-color: #fbc658;
   border-radius: 50%;
   opacity: 1;
   text-shadow: none;
@@ -4793,7 +4793,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .carousel-control:hover,
 .carousel-control:focus {
   opacity: 1;
-  background-color: #f33816;
+  background-color: #fbc658;
 }
 .carousel-control.left {
   height: 30px;
@@ -4842,7 +4842,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border: 0 none;
 }
 .carousel-indicators .active {
-  background-color: #f5593d;
+  background-color: #fbc658;
 }
 .page-carousel:hover .carousel-control.right,
 .page-carousel:hover .carousel-control.left {

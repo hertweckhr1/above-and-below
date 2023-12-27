@@ -5392,7 +5392,7 @@ License - nucleoapp.com/license/
 }
 
 .carousel-control {
-  background-color: #f5593d;
+  background-color: #fbc658;
   border-radius: 50%;
   opacity: 1;
   text-shadow: none;
@@ -5400,7 +5400,7 @@ License - nucleoapp.com/license/
 .carousel-control:hover,
 .carousel-control:focus {
   opacity: 1;
-  background-color: #f33816;
+  background-color: #fbc658;
 }
 
 .carousel-control.left {
@@ -5459,7 +5459,7 @@ License - nucleoapp.com/license/
 }
 
 .carousel-indicators .active {
-  background-color: #f5593d;
+  background-color: #fbc658;
 }
 
 .page-carousel:hover .carousel-control.right,

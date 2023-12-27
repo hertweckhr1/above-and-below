@@ -33,7 +33,7 @@ import {
   Button,
 } from "reactstrap";
 
-function ExamplesNavbar() {
+function TopNavBar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -73,9 +73,8 @@ function ExamplesNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            to="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
+            to="/home"
+            title="Above and Below"
             tag={Link}
           >
             Home
@@ -99,33 +98,31 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-ruler-pencil" /> Services
+              <NavLink href="#services">
+                {/* <i className="nc-icon nc-ruler-pencil" />  */}
+                Services
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                target="_blank"
+                href="#who-we-are"
               >
-                <i className="nc-icon nc-circle-10" /> Who We Are
+                {/* <i className="nc-icon nc-circle-10" />  */}
+                Who We Are
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href="#gallery"
+              >
+                {/* <i className="nc-icon nc-circle-10" />  */}
+                Gallery
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.instagram.com/above.below.bgs/"
                 target="_blank"
                 title="Follow us on Instagram"
               >
@@ -134,12 +131,21 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://www.facebook.com/gabrielle.rafert.9"
+                target="_blank"
+                title="Like us on Facebook"
+              >
+                <i className="fa fa-facebook-square" />
+                <p className="d-lg-none">Facebook</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <Button
                 className="btn-round"
                 color="warning"
-                outline
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
-                target="_blank"
+                href="contact-us"
               >
                 <i className="nc-icon nc-email-85" /> Contact Us
               </Button>
@@ -151,4 +157,4 @@ function ExamplesNavbar() {
   );
 }
 
-export default ExamplesNavbar;
+export default TopNavBar;
