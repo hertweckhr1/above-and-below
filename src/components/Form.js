@@ -11,22 +11,12 @@ import {
     Col,
 } from "reactstrap";
 import emailjs from 'emailjs-com';
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
-
 
 const ContactForm = () => {
     const [showFormValidation, setShowFormValidation] = useState(false);
-    const { executeRecaptcha } = useGoogleReCaptcha();
     
     const sendEmail = async (e) => {
         e.preventDefault();
-        if (!executeRecaptcha) {
-            return;
-          }
-      
-        const result = await executeRecaptcha("contactform");
-      
-        console.log("Recaptcha result", result); // it will show you a token 
 
         const formData = new FormData(e.target);
         const hiddenData = formData.get('secret_input');
@@ -65,7 +55,7 @@ const ContactForm = () => {
                 *All fields must be filled out
               </p>
             )}
-            <Form className="contact-form" id="contact-form" onSubmit={sendEmail}>
+            <Form className="contact-form" onSubmit={sendEmail}>
               <Row>
                 <Col md="6">
                   <Input type="hidden" name="secret_input" />
