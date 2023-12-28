@@ -68,8 +68,8 @@ function LandingPage() {
     if (!message || !name || !email) {
       return setShowFormValidation(true);
     }
-    console.log('serviceId', process.env.SERVICE_ID, 'template', process.env.TEMPLATE_ID, 'user', process.env.USER_ID)
-    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
+    console.log('serviceId', process.env.REACT_APP_SERVICE_ID, 'template', process.env.REACT_APP_TEMPLATE_ID, 'user', process.env.REACT_APP_USER_ID)
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
