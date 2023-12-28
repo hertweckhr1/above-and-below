@@ -56,7 +56,7 @@ function LandingPage() {
     e.preventDefault();
     const formData = new FormData(e.target);
     const hiddenData = formData.get('secret_input');
-    // do not want bot sending emails
+    // do not want bot sending emails!
     if (!!hiddenData) {
       return;
     }
