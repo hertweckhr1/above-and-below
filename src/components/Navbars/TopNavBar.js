@@ -75,10 +75,11 @@ function TopNavBar() {
             data-placement="bottom"
             onClick={() => document.getElementById("main-title").scrollIntoView({behavior: "smooth"})}
             // to="/"
-            title="Above and Below"
+            title="Home"
             tag={Link}
           >
-            Home
+            {/* Home */}
+            <img alt="bee logo" height="60px" width="60px" src={require("assets/img/logo/yellow.png")} />
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
