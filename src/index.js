@@ -39,12 +39,12 @@ root.render(
   <BrowserRouter>
     <Routes>
       {/* <Route path="/index" element={<Index />} /> */}
-      <Route path="/home" element={<Home />} />
+      <Route path="*" element={<Home />} />
       {/* <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="/register-page" element={<RegisterPage />} /> */}
-      <Route path="*" element={<Navigate to="/home" replace />} />
+      {/* <Route path="*" element={<Navigate to="/home" replace />} /> */}
     </Routes>
   </BrowserRouter>
 );

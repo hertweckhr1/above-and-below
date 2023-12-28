@@ -71,13 +71,14 @@ function TopNavBar() {
     >
       <Container>
         <div className="navbar-translate">
+          {/* leaving in now for spacing purposes */}
           <NavbarBrand
             data-placement="bottom"
             to="/home"
             title="Above and Below"
             tag={Link}
           >
-            Home
+            {/* Above and Below */}
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -142,12 +143,23 @@ function TopNavBar() {
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="mailto:hertweckhr1@gmail.com"
+                title="Send us an email"
+              >
+                <i className="fa fa-envelope" />
+                <p className="d-lg-none">Email</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <Button
                 className="btn-round"
                 color="warning"
-                href="contact-us"
+                href="#contact-us"
               >
-                <i className="nc-icon nc-email-85" /> Contact Us
+                {/* <i className="nc-icon nc-email-85" />  */}
+                Contact Us
               </Button>
             </NavItem>
           </Nav>
