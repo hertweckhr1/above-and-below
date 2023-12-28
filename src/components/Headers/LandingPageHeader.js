@@ -43,6 +43,7 @@ function LandingPageHeader() {
   return (
     <>
       <div
+        id="main-title"
         style={{
           backgroundImage:
             "url(" + require("assets/img/bees/bee-keeper3.jpg") + ")",

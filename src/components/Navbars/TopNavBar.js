@@ -71,14 +71,14 @@ function TopNavBar() {
     >
       <Container>
         <div className="navbar-translate">
-          {/* leaving in now for spacing purposes */}
           <NavbarBrand
             data-placement="bottom"
-            to="/home"
+            onClick={() => document.getElementById("main-title").scrollIntoView({behavior: "smooth"})}
+            // to="/"
             title="Above and Below"
             tag={Link}
           >
-            {/* Above and Below */}
+            Home
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -99,14 +99,15 @@ function TopNavBar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="#services">
+              <NavLink href='#' onClick={() => document.getElementById("services").scrollIntoView({behavior: "smooth"})}>
                 {/* <i className="nc-icon nc-ruler-pencil" />  */}
                 Services
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                href="#who-we-are"
+                href="#"
+                onClick={() => document.getElementById("who-we-are").scrollIntoView({behavior: "smooth"})}
               >
                 {/* <i className="nc-icon nc-circle-10" />  */}
                 Who We Are
@@ -114,7 +115,8 @@ function TopNavBar() {
             </NavItem>
             <NavItem>
               <NavLink
-                href="#gallery"
+                href="#"
+                onClick={() => document.getElementById("gallery").scrollIntoView({behavior: "smooth"})}
               >
                 {/* <i className="nc-icon nc-circle-10" />  */}
                 Gallery
@@ -156,7 +158,7 @@ function TopNavBar() {
               <Button
                 className="btn-round"
                 color="warning"
-                href="#contact-us"
+                onClick={() => document.getElementById("contact-us").scrollIntoView({behavior: "smooth"})}
               >
                 {/* <i className="nc-icon nc-email-85" />  */}
                 Contact Us
