@@ -102,7 +102,7 @@ function SectionCarousel() {
                         onExited={onExited}
                         key={item.src}
                       >
-                        <img style={{'max-height': '530px'}}  src={item.src} alt={item.altText} />
+                        <img src={item.src} alt={item.altText} />
                         <CarouselCaption
                           captionText={item.caption}
                           captionHeader=""

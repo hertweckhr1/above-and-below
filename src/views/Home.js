@@ -16,7 +16,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState } from "react";
 
 // reactstrap components
 import {
@@ -34,6 +34,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import emailjs from 'emailjs-com';
 
 // core components
 import TopNavBar from "components/Navbars/TopNavBar.js";
@@ -42,6 +43,7 @@ import DemoFooter from "components/Footers/DemoFooter.js";
 import SectionCarousel from "./index-sections/SectionCarousel";
 
 function LandingPage() {
+  const [showFormValidation, setShowFormValidation] = useState(false);
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -49,6 +51,36 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const hiddenData = formData.get('secret_input');
+    // do not want bot sending emails
+    if (!!hiddenData) {
+      return;
+    }
+
+    const message = formData.get('message');
+    const name = formData.get('from_name');
+    const email = formData.get('reply_to');
+
+    if (!message || !name || !email) {
+      return setShowFormValidation(true);
+    }
+
+    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset();
+    if (showFormValidation) {
+      setShowFormValidation(false);
+    }
+  }
+
   return (
     <>
       <TopNavBar />
@@ -220,7 +252,7 @@ function LandingPage() {
                     />
                 </Col>
                 <Col md="8">
-                    <p style={{'font-size': '20px'}} className="card-description text-muted text-center">
+                    <p style={{fontSize: '20px'}} className="card-description text-muted text-center">
                         Meet Gabby and Devon, the devoted duo behind our buzzing beekeeping and flourishing garden business. With their expertise in beekeeping and green thumb in gardening, they have teamed up to create a unique venture that offers exquisite raw honey, personalized gardening consultations, and enlightening beekeeping workshops. Their shared passion for the environment and sustainable practices is evident in their commitment to educate and inspire others about the importance of bees, effective gardening, and the interconnectedness of nature. Join Gabby and Devon on this journey as they strive to make a difference one garden and one beehive at a time.
                     </p>
                 </Col>
@@ -238,9 +270,15 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="title text-center">Contact Us</h2>
-                <Form className="contact-form">
+                {showFormValidation && (
+                  <p className="text-danger text-center">
+                    *All fields must be filled out
+                  </p>
+                )}
+                <Form className="contact-form" onSubmit={sendEmail}>
                   <Row>
                     <Col md="6">
+                      <Input type="hidden" name="secret_input" />
                       <label className="text-muted">Name</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
@@ -248,7 +286,7 @@ function LandingPage() {
                             <i className="nc-icon nc-single-02" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
+                        <Input name="from_name" placeholder="Name" type="text" />
                       </InputGroup>
                     </Col>
                     <Col md="6">
@@ -259,12 +297,13 @@ function LandingPage() {
                             <i className="nc-icon nc-email-85" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
+                        <Input name="reply_to" placeholder="Email" type="text" />
                       </InputGroup>
                     </Col>
                   </Row>
                   <label className="text-muted">Message</label>
                   <Input
+                    name="message"
                     placeholder="Tell us what's on your mind..."
                     type="textarea"
                     rows="4"
