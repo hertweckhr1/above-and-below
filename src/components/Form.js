@@ -24,7 +24,7 @@ const ContactForm = () => {
             return;
           }
       
-        const result = await executeRecaptcha("homepage");
+        const result = await executeRecaptcha("contact-form");
       
         console.log("Recaptcha result", result); // it will show you a token 
 
@@ -65,7 +65,7 @@ const ContactForm = () => {
                 *All fields must be filled out
               </p>
             )}
-            <Form className="contact-form" onSubmit={sendEmail}>
+            <Form className="contact-form" id="contact-form" onSubmit={sendEmail}>
               <Row>
                 <Col md="6">
                   <Input type="hidden" name="secret_input" />
