@@ -68,7 +68,7 @@ function LandingPage() {
     if (!message || !name || !email) {
       return setShowFormValidation(true);
     }
-
+    console.log('serviceId', process.env.SERVICE_ID, 'template', process.env.TEMPLATE_ID, 'user', process.env.USER_ID)
     emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
       .then((result) => {
           console.log(result.text);
