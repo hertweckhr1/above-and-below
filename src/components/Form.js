@@ -24,7 +24,7 @@ const ContactForm = () => {
             return;
           }
       
-        const result = await executeRecaptcha("contact-form");
+        const result = await executeRecaptcha("contactform");
       
         console.log("Recaptcha result", result); // it will show you a token 
 
