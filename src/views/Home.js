@@ -219,7 +219,7 @@ function LandingPage() {
                 </Col>
                 <Col md="8">
                     <p style={{fontSize: '20px'}} className="card-description text-muted text-center">
-                        Meet Gabby and Devon, the devoted duo behind our buzzing beekeeping and flourishing garden business. With their expertise in beekeeping and green thumb in gardening, they have teamed up to create a unique venture that offers exquisite raw honey, personalized gardening consultations, and enlightening beekeeping workshops. Their shared passion for the environment and sustainable practices is evident in their commitment to educate and inspire others about the importance of bees, effective gardening, and the interconnectedness of nature. Join Gabby and Devon on this journey as they strive to make a difference one garden and one beehive at a time.
+                        Meet Gabby and Devin, the devoted duo behind our buzzing beekeeping and flourishing garden business. With their expertise in beekeeping and green thumb in gardening, they have teamed up to create a unique venture that offers exquisite raw honey, personalized gardening consultations, and enlightening beekeeping workshops. Their shared passion for the environment and sustainable practices is evident in their commitment to educate and inspire others about the importance of bees, effective gardening, and the interconnectedness of nature. Join Gabby and Devin on this journey as they strive to make a difference one garden and one beehive at a time.
                     </p>
                 </Col>
             </Row>

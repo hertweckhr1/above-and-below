@@ -137,7 +137,7 @@ function TopNavBar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/gabrielle.rafert.9"
+                href="https://www.facebook.com/above.below.bgs"
                 target="_blank"
                 title="Like us on Facebook"
               >
@@ -148,7 +148,7 @@ function TopNavBar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="mailto:hertweckhr1@gmail.com"
+                href="mailto:above.below.bgs@gmail.com"
                 title="Send us an email"
               >
                 <i className="fa fa-envelope" />
