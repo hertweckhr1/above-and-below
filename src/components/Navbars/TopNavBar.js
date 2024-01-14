@@ -148,7 +148,7 @@ function TopNavBar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="mailto:above.below.bgs@gmail.com"
+                href="mailto:info@abovebelowbgs.com"
                 title="Send us an email"
               >
                 <i className="fa fa-envelope" />
