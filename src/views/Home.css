@@ -3,10 +3,15 @@
 }
 
 .services {
-    color: #545150;
+    color: #4f4a4a;
 
-    .services-list-item {
-        text-align: left;
+    .services-list {
+        margin-top: 15px;
+
+        .services-list-item {
+            text-align: left;
+            font-size: 15px;
+        }
     }
 
     .education-summary {
