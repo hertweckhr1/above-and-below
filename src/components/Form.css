@@ -1,0 +1,16 @@
+.bug-corner {
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 0 0 30px;
+}
+
+.bug-corner__upload-button, .submit-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.form-call-us {
+    padding-top: 40px;
+    color: white;
+}

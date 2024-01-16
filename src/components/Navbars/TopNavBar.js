@@ -101,7 +101,6 @@ function TopNavBar() {
           <Nav navbar>
             <NavItem>
               <NavLink href='#' onClick={() => document.getElementById("services").scrollIntoView({behavior: "smooth"})}>
-                {/* <i className="nc-icon nc-ruler-pencil" />  */}
                 Services
               </NavLink>
             </NavItem>
@@ -110,7 +109,6 @@ function TopNavBar() {
                 href="#"
                 onClick={() => document.getElementById("who-we-are").scrollIntoView({behavior: "smooth"})}
               >
-                {/* <i className="nc-icon nc-circle-10" />  */}
                 Who We Are
               </NavLink>
             </NavItem>
@@ -119,7 +117,6 @@ function TopNavBar() {
                 href="#"
                 onClick={() => document.getElementById("gallery").scrollIntoView({behavior: "smooth"})}
               >
-                {/* <i className="nc-icon nc-circle-10" />  */}
                 Gallery
               </NavLink>
             </NavItem>
@@ -155,6 +152,15 @@ function TopNavBar() {
                 <p className="d-lg-none">Email</p>
               </NavLink>
             </NavItem>
+            {/* <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="tel:206-512-9996"
+              >
+                <i className="fa fa-phone" />
+                206-512-9996
+              </NavLink>
+            </NavItem> */}
             <NavItem>
               <Button
                 className="btn-round"

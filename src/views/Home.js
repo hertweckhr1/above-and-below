@@ -36,6 +36,7 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 import SectionCarousel from "./index-sections/SectionCarousel";
 import ContactForm from "components/Form";
+import './Home.css';
 
 function LandingPage() {
   // const [showFormValidation, setShowFormValidation] = useState(false);
@@ -47,13 +48,41 @@ function LandingPage() {
     };
   });
 
+  const beeServices = [
+    'New Hive Installation',
+    'Inspections',
+    'Treatments',
+    'Personalized Maintenance Plans',
+    'Honey Harvest',
+    'Nucleaus Colonies',
+    'Hive Set-ups',
+    'Bee-hive Tours',
+    'Beekeeper Expereince Days',
+    'Bee/Wasp Identification & Removal',
+    '*FREE SWARM REMOVAL*'
+  ];
+
+  const gardenServices = [
+    'Landscaping and gardening for positive environmental impact',
+    'Sustainable and responsible management plans for residential and commercial sites',
+    'Customized modifications to existing landscapes to incorporate a native landscape',
+    'Kill your lawn - lawn replacement for beneficial and sustainable gardening',
+    'Native habitat restoration',
+    'Pollinator gardening',
+    'Edible landscaping',
+    'Mushroom gardening',
+    'Container & balcony gardening',
+    'Overgrowth and invasive plant removal (i.e. blackberry, holly, ivy, scotch broom, etc.)',
+    'Pruning for plant health and vitality'
+  ]
+
   return (
     <>
       <TopNavBar />
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center" id="services">
-          <Container>
+          <Container className="services">
             <h2 className="title">Services</h2>
             <Row>
               <Col md="4">
@@ -70,39 +99,17 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Beekeeping</CardTitle>
-                        <h6 className="card-category">Consulting, bee boxes, honey</h6>
+                        <h6 className="card-category">Consulting, Hive Services, Gear & Honey</h6>
                       </div>
                     </a>
-                    <p className="card-description text-center">
-                        Committed to keeping our planet filled with these amazing pollinators, I provide pure, raw honey right from my bee farm along with a chance to adopt your own bee-hives. I'm also skilled in offering swarm removal services maintaining safety and fair treatment of bees.
-                    </p>
+                    <ul className="services-list">
+                      {beeServices.map((service) => <li className="services-list-item">{service}</li>)}
+                      {/* <li className="services-list-item">
+                        <div>*FREE SWARM REMOVAL*</div>
+                        (Call Devin: <a href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a>)
+                      </li> */}
+                    </ul>
                   </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
                 </Card>
               </Col>
               <Col md="4">
@@ -122,36 +129,10 @@ function LandingPage() {
                         <h6 className="card-category">Focus on Sustainable beekeeping</h6>
                       </div>
                     </a>
-                    <p className="card-description text-center">
+                    <p className="card-description text-center education-summary">
                         We offer unique learning opportunities for individuals, schools, and community groups. Our workshops and events cover everything from the role of bees in pollination, honey making process, to hands-on experience in beekeeping. Our goal is to inspire budding bee enthusiasts and promote sustainable beekeeping practices for a better, greener future.
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
                 </Card>
               </Col>
               <Col md="4">
@@ -167,43 +148,26 @@ function LandingPage() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Garden</CardTitle>
-                        <h6 className="card-category">Consulting, landscaping</h6>
+                        <CardTitle tag="h4">Gardening</CardTitle>
+                        <h6 className="card-category">Consulting & landscaping</h6>
                       </div>
                     </a>
-                    <p className="card-description text-center">
-                        Our garden service company provides expert advice and personalized consultations to guide you in creating aesthetically pleasing and productive gardens tailored to your unique needs and ambitions.
-                    </p>
+                    <ul className="services-list">
+                      {gardenServices.map((service) => <li className="services-list-item">{service}</li>)}
+                    </ul>
                   </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
                 </Card>
               </Col>
             </Row>
+            <Button
+              className="btn-round"
+              color="default"
+              outline
+              type="button"
+              onClick={() => document.getElementById("contact-us").scrollIntoView({behavior: "smooth"})}
+            >
+              Contact us for full service list and pricing
+            </Button>
           </Container>
         </div>
         <div className="section section-dark text-center" id="who-we-are">
@@ -213,13 +177,13 @@ function LandingPage() {
                 <Col md="4">
                     <img
                         alt="..."
-                        className="img-rounded img-responsive"
-                        src={require("assets/img/bees/bee-keeper_family.jpg")}
+                        className="img-rounded img-responsive about-us-image"
+                        src={require("assets/img/bees/AboutUs.jpeg")}
                     />
                 </Col>
                 <Col md="8">
-                    <p style={{fontSize: '20px'}} className="card-description text-muted text-center">
-                        Meet Gabby and Devin, the devoted duo behind our buzzing beekeeping and flourishing garden business. With their expertise in beekeeping and green thumb in gardening, they have teamed up to create a unique venture that offers exquisite raw honey, personalized gardening consultations, and enlightening beekeeping workshops. Their shared passion for the environment and sustainable practices is evident in their commitment to educate and inspire others about the importance of bees, effective gardening, and the interconnectedness of nature. Join Gabby and Devin on this journey as they strive to make a difference one garden and one beehive at a time.
+                    <p style={{fontSize: '18px'}} className="card-description text-muted text-center">
+                      Hi! Gabby and Devin here, ma & pa, gardener & beekeeper duo. We're here in the Coast Salish lowland forest (Puget Sound) providing sustainable and responsible gardening and beekeeping services to residents and commercial sites. Our shared passion for the environment drives us to nurture the land we share and live on for a greener, healthier future for all. For people & pollinators alike. We strive to help you create a space you feel good in, where you can grow a healthy relationship with nature, a place you feel like you can escape and relax in right outside your door. Through pollinator focused gardening and sustainable beekeeping we believe everyone can bring the natural world back home. We hope you’ll join us on this journey to help make the Earth a bit more green again one garden at a time.
                     </p>
                 </Col>
             </Row>
@@ -233,6 +197,7 @@ function LandingPage() {
         </div>
         <div className="section section-dark landing-section" id="contact-us">
           <ContactForm/>
+          <p className="text-center form-call-us">Need to chat sooner? Give us a call <i className="fa fa-phone" />: <a href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a></p>
         </div>
       </div>
       <DemoFooter />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
     Alert,
     Button,
@@ -12,11 +12,13 @@ import {
     Col,
 } from "reactstrap";
 import emailjs from 'emailjs-com';
+import './Form.css';
 
 const ContactForm = () => {
     const [showFormValidation, setShowFormValidation] = useState(false);
     const [showEmailFailure, setShowEmailFailure] = useState(false);
     const [showEmailSuccess, setShowEmailSuccess] = useState(false);
+    const ref = useRef(null);
 
     useEffect(() => {
       const timer = setTimeout(() => {
@@ -132,9 +134,45 @@ const ContactForm = () => {
                 type="textarea"
                 rows="4"
               />
+              {/* <Row className="bug-corner">
+                <Col className="ml-auto mr-auto" md="12">
+                  <h3 className="title text-center">
+                    <div>Gabby's Bug Corner</div>
+                    <small>Find a bug you're itching to identify? Snap, upload, and let's identify it together!</small>
+                  </h3>
+                  <Button
+                    onClick={() => ref.current?.click()}
+                    className="btn-round bug-corner__upload-button"
+                    color="warning"
+                    outline
+                    type="button"
+                  >
+                    Upload Image */}
+                    {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+                    {/* <label style={{display: 'none'}}>
+                      <input
+                        accept=".png, .jpg, .jpeg, .pdf, .tif, .tiff"
+                        data-nuiexp="upload-receipt"
+                        multiple
+                        onChange={() => {}}
+                        ref={ref}
+                        tabIndex={-1}
+                        type="file"
+                      />
+                    </label>
+                  </Button>
+                </Col>
+              </Row> */}
               <Row>
                 <Col className="ml-auto mr-auto" md="4">
-                  <Button className="btn-fill" color="warning" size="lg">
+                  <Button
+                    // className="btn-fill"
+                    // color="warning"
+                    size="lg"
+                    className="btn-round submit-button"
+                    color="warning"
+                    type="button"
+                  >
                     Send
                   </Button>
                 </Col>

@@ -38,11 +38,11 @@ function DemoFooter() {
               </li>
             </ul>
           </nav>
-          <div className="credits ml-auto">
+          {/* <div className="credits ml-auto">
             <span className="copyright">
-              © {new Date().getFullYear()}
+              {new Date().getFullYear()} HVS
             </span>
-          </div>
+          </div> */}
         </Row>
       </Container>
     </footer>

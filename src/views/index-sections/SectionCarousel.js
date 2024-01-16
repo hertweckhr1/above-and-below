@@ -44,15 +44,55 @@ const items = [
     // caption: "Bees in hive",
   },
   {
-    src: require("assets/img/bees/garden3.jpg"),
-    altText: "Garden Project",
-    // caption: "Garden Project",
+    src: require("assets/img/carousel/beekeeper-action.jpeg"),
+    altText: "Bee Maintenance",
   },
+  {
+    src: require("assets/img/carousel/bee-flower.jpeg"),
+    altText: "Bee on flower",
+  },
+  {
+    src: require("assets/img/carousel/bees-comb.jpeg"),
+    altText: "Bees on honeycomb",
+  },
+  // {
+  //   src: require("assets/img/carousel/bee-flower2.jpeg"),
+  //   altText: "Bee on flower",
+  // },
+  {
+    src: require("assets/img/carousel/hive.jpeg"),
+    altText: "Bees in hive",
+  },
+  {
+    src: require("assets/img/carousel/bee-flower3.jpeg"),
+    altText: "Bee on flower",
+  },
+  {
+    src: require("assets/img/carousel/maidenhair.jpeg"),
+    altText: "Maidenhair ferns",
+  },
+  // {
+  //   src: require("assets/img/carousel/bee-flower4.jpeg"),
+  //   altText: "Bee on flower",
+  // },
+  // {
+  //   src: require("assets/img/carousel/bee-wood.jpeg"),
+  //   altText: "Bee nestling in wood",
+  // },
+  // {
+  //   src: require("assets/img/carousel/bee-flower5.jpeg"),
+  //   altText: "Bee on flower",
+  // },
   {
     src: require("assets/img/bees/bee-upclose.jpg"),
     altText: "Bees in hive",
     // caption: "Bees in hive",
   },
+  {
+    src: require("assets/img/bees/garden3.jpg"),
+    altText: "Garden Project",
+    // caption: "Garden Project",
+  }
 ];
 
 function SectionCarousel() {

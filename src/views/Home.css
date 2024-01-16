@@ -1,0 +1,17 @@
+.about-us-image {
+    padding-bottom: 16px;
+}
+
+.services {
+    color: #545150;
+
+    .services-list-item {
+        text-align: left;
+    }
+
+    .education-summary {
+        color: black
+    }
+}
+
+

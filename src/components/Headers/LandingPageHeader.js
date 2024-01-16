@@ -55,9 +55,9 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Above and Below</h1>
+            <h1>Above & Below</h1>
             <h3>
-              Bee and Garden Service
+              Bee & Garden Services
             </h3>
           </div>
         </Container>
