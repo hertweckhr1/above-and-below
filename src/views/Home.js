@@ -152,7 +152,7 @@ function LandingPage() {
                       </div>
                     </a>
                     <ul className="services-list">
-                      {gardenServices.map((service) => <li className="services-list-item">{service}</li>)}
+                      {gardenServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                     </ul>
                   </CardBody>
                 </Card>
