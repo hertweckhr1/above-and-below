@@ -18,7 +18,7 @@ const ContactForm = () => {
     const [showFormValidation, setShowFormValidation] = useState(false);
     const [showEmailFailure, setShowEmailFailure] = useState(false);
     const [showEmailSuccess, setShowEmailSuccess] = useState(false);
-    const ref = useRef(null);
+    // const ref = useRef(null);
 
     useEffect(() => {
       const timer = setTimeout(() => {
