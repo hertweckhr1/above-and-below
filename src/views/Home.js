@@ -102,7 +102,7 @@ function LandingPage() {
                       </div>
                     </a>
                     <ul className="services-list">
-                      {beeServices.map((service) => <li className="services-list-item">{service}</li>)}
+                      {beeServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                       {/* <li className="services-list-item">
                         <div>*FREE SWARM REMOVAL*</div>
                         (Call Devin: <a href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a>)
