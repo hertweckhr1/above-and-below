@@ -55,10 +55,10 @@ const items = [
     src: require("assets/img/carousel/bees-comb.jpeg"),
     altText: "Bees on honeycomb",
   },
-  // {
-  //   src: require("assets/img/carousel/bee-flower2.jpeg"),
-  //   altText: "Bee on flower",
-  // },
+  {
+    src: require("assets/img/carousel/bee-flower2.jpeg"),
+    altText: "Bee on flower",
+  },
   {
     src: require("assets/img/carousel/hive.jpeg"),
     altText: "Bees in hive",
@@ -71,18 +71,18 @@ const items = [
     src: require("assets/img/carousel/maidenhair.jpeg"),
     altText: "Maidenhair ferns",
   },
-  // {
-  //   src: require("assets/img/carousel/bee-flower4.jpeg"),
-  //   altText: "Bee on flower",
-  // },
-  // {
-  //   src: require("assets/img/carousel/bee-wood.jpeg"),
-  //   altText: "Bee nestling in wood",
-  // },
-  // {
-  //   src: require("assets/img/carousel/bee-flower5.jpeg"),
-  //   altText: "Bee on flower",
-  // },
+  {
+    src: require("assets/img/carousel/bee-flower4.jpeg"),
+    altText: "Bee on flower",
+  },
+  {
+    src: require("assets/img/carousel/bee-wood.jpeg"),
+    altText: "Bee nestling in wood",
+  },
+  {
+    src: require("assets/img/carousel/bee-flower5.jpeg"),
+    altText: "Bee on flower",
+  },
   {
     src: require("assets/img/bees/bee-upclose.jpg"),
     altText: "Bees in hive",

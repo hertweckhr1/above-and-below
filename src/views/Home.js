@@ -108,6 +108,34 @@ function LandingPage() {
                   <div className="card-avatar">
                     <img
                       alt="..."
+                      src={require("assets/img/bees/garden1.jpg")}
+                    />
+                  </div>
+                  <CardBody>
+                    <div style={{display: 'inline-flex'}}>
+                      <div>
+                        <CardTitle tag="h4">Gardening</CardTitle>
+                        <h6 className="card-category">Consulting & landscaping</h6>
+                      </div>
+                    </div>
+                    <div>
+                        <img
+                          alt="Pollinator steward logo"
+                          width="75px"
+                          src={require("assets/img/bees/PollinatorStewardLogo.png")}
+                        />
+                      </div>
+                    <ul className="services-list">
+                      {gardenServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
+                    </ul>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-profile card-plain">
+                  <div className="card-avatar">
+                    <img
+                      alt="..."
                       src={require("assets/img/bees/bee-boxes2.jpg")}
                     />
                   </div>
@@ -119,34 +147,6 @@ function LandingPage() {
                     <p className="card-description text-center education-summary">
                         We offer unique learning opportunities for individuals, schools, and community groups. Our workshops and events cover everything from the role of bees in pollination, honey making process, to hands-on experience in beekeeping. Our goal is to inspire budding bee enthusiasts and promote sustainable beekeeping practices for a better, greener future.
                     </p>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <img
-                      alt="..."
-                      src={require("assets/img/bees/garden1.jpg")}
-                    />
-                  </div>
-                  <CardBody>
-                    {/* <div style={{display: 'inline-flex'}}> */}
-                      {/* <div>
-                        <img
-                          alt="Pollinator steward logo"
-                          width="50px"
-                          src={require("assets/img/bees/PollinatorStewardLogo.png")}
-                        />
-                      </div> */}
-                      <div>
-                        <CardTitle tag="h4">Gardening</CardTitle>
-                        <h6 className="card-category">Consulting & landscaping</h6>
-                      </div>
-                    {/* </div> */}
-                    <ul className="services-list">
-                      {gardenServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
-                    </ul>
                   </CardBody>
                 </Card>
               </Col>

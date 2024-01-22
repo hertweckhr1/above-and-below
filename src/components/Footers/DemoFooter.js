@@ -20,15 +20,14 @@
 import React from "react";
 
 // reactstrap components
-import { Col, Row, Container } from "reactstrap";
+import { Row, Container } from "reactstrap";
 
 function DemoFooter() {
   return (
     <footer className="footer footer-black footer-white">
       <Container>
-        <Row style={{padding: '16px 0'}}>
-          <Col md="11" sm="10" xs="8">
-            <nav style={{lineHeight: '100px'}}>
+        <Row>
+            <nav>
               <ul>
                 <li>
                   <a
@@ -39,16 +38,6 @@ function DemoFooter() {
                 </li>
               </ul>
             </nav>
-          </Col>
-          <Col md="1" sm="2" xs="4">
-            <div className="credits ml-auto">
-              <img
-                alt="Pollinator steward logo"
-                width="75px"
-                src={require("assets/img/bees/PollinatorStewardLogo.png")}
-              />
-            </div>
-          </Col>
           {/* <div className="credits ml-auto">
             <span className="copyright">
               {new Date().getFullYear()} HVS
