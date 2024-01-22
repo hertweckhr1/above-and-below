@@ -189,7 +189,7 @@ function LandingPage() {
         </div>
         <div className="section section-dark landing-section" id="contact-us">
           <ContactForm/>
-          <p className="text-center form-call-us">Free Pollinator & Insect Identification - <a className="contact-form-link" href="mailto:info@abovebelowbgs.com" alt="send an email">Send an email</a> titled “Gabby’s Bug Box!”</p>
+          <p className="text-center form-call-us">Free Pollinator & Insect Identification - <a className="contact-form-link" href="mailto:gabby@abovebelowbgs.com" alt="send an email">Send an email</a> titled “Gabby’s Bug Box!”</p>
           <p className="text-center form-call-us">Need to chat sooner? Give us a call <i className="fa fa-phone" />: <a className="contact-form-link" href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a></p>
         </div>
       </div>
