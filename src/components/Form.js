@@ -105,7 +105,7 @@ const ContactForm = () => {
               <Row>
                 <Col md="6">
                   <Input type="hidden" name="secret_input" />
-                  <label className="text-muted">Name *</label>
+                  <label className="white-text">Name *</label>
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
@@ -116,7 +116,7 @@ const ContactForm = () => {
                   </InputGroup>
                 </Col>
                 <Col md="6">
-                  <label className="text-muted">Email *</label>
+                  <label className="white-text">Email *</label>
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
@@ -127,7 +127,7 @@ const ContactForm = () => {
                   </InputGroup>
                 </Col>
               </Row>
-              <label className="text-muted">Message *</label>
+              <label className="white-text">Message *</label>
               <Input
                 name="message"
                 placeholder="Tell us what's on your mind..."

@@ -15,8 +15,20 @@
     }
 
     .education-summary {
-        color: black
+        color: black;
     }
+}
+
+.contact-form-link {
+    color: rgb(251, 198, 88);
+}
+
+.contact-form-link:hover {
+    color: rgb(173, 124, 23);
+}
+
+.white-text {
+    color: lightgray;
 }
 
 

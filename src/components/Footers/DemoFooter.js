@@ -20,24 +20,35 @@
 import React from "react";
 
 // reactstrap components
-import { Row, Container } from "reactstrap";
+import { Col, Row, Container } from "reactstrap";
 
 function DemoFooter() {
   return (
     <footer className="footer footer-black footer-white">
       <Container>
-        <Row>
-          <nav className="footer-nav">
-            <ul>
-              <li>
-                <a
-                  href="#"
-                >
-                  <i className="nc-icon nc-minimal-up" /> Back to Top
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <Row style={{padding: '16px 0'}}>
+          <Col md="11" sm="10" xs="8">
+            <nav style={{lineHeight: '100px'}}>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    <i className="nc-icon nc-minimal-up" /> Back to Top
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </Col>
+          <Col md="1" sm="2" xs="4">
+            <div className="credits ml-auto">
+              <img
+                alt="Pollinator steward logo"
+                width="75px"
+                src={require("assets/img/bees/PollinatorStewardLogo.png")}
+              />
+            </div>
+          </Col>
           {/* <div className="credits ml-auto">
             <span className="copyright">
               {new Date().getFullYear()} HVS

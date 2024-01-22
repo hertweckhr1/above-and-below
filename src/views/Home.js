@@ -87,26 +87,18 @@ function LandingPage() {
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/bees/bee-wood1.jpg")}
-                      />
-                    </a>
+                    <img
+                      alt="..."
+                      src={require("assets/img/bees/bee-wood1.jpg")}
+                    />
                   </div>
                   <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Beekeeping</CardTitle>
-                        <h6 className="card-category">Consulting, Hive Services, Gear & Honey</h6>
-                      </div>
-                    </a>
+                    <div>
+                      <CardTitle tag="h4">Beekeeping</CardTitle>
+                      <h6 className="card-category">Consulting, Hive Services, Gear & Honey</h6>
+                    </div>
                     <ul className="services-list">
                       {beeServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
-                      {/* <li className="services-list-item">
-                        <div>*FREE SWARM REMOVAL*</div>
-                        (Call Devin: <a href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a>)
-                      </li> */}
                     </ul>
                   </CardBody>
                 </Card>
@@ -114,20 +106,16 @@ function LandingPage() {
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/bees/bee-boxes2.jpg")}
-                      />
-                    </a>
+                    <img
+                      alt="..."
+                      src={require("assets/img/bees/bee-boxes2.jpg")}
+                    />
                   </div>
                   <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Education</CardTitle>
-                        <h6 className="card-category">Focus on Sustainable beekeeping</h6>
-                      </div>
-                    </a>
+                    <div>
+                      <CardTitle tag="h4">Education</CardTitle>
+                      <h6 className="card-category">Focus on Sustainable Beekeeping, Pollinators, and their Habitat</h6>
+                    </div>
                     <p className="card-description text-center education-summary">
                         We offer unique learning opportunities for individuals, schools, and community groups. Our workshops and events cover everything from the role of bees in pollination, honey making process, to hands-on experience in beekeeping. Our goal is to inspire budding bee enthusiasts and promote sustainable beekeeping practices for a better, greener future.
                     </p>
@@ -137,20 +125,25 @@ function LandingPage() {
               <Col md="4">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/bees/garden1.jpg")}
-                      />
-                    </a>
+                    <img
+                      alt="..."
+                      src={require("assets/img/bees/garden1.jpg")}
+                    />
                   </div>
                   <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
+                    {/* <div style={{display: 'inline-flex'}}> */}
+                      {/* <div>
+                        <img
+                          alt="Pollinator steward logo"
+                          width="50px"
+                          src={require("assets/img/bees/PollinatorStewardLogo.png")}
+                        />
+                      </div> */}
+                      <div>
                         <CardTitle tag="h4">Gardening</CardTitle>
                         <h6 className="card-category">Consulting & landscaping</h6>
                       </div>
-                    </a>
+                    {/* </div> */}
                     <ul className="services-list">
                       {gardenServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                     </ul>
@@ -181,7 +174,7 @@ function LandingPage() {
                     />
                 </Col>
                 <Col md="8">
-                    <p style={{fontSize: '18px'}} className="card-description text-muted text-center">
+                    <p style={{fontSize: '18px'}} className="card-description white-text text-center">
                       Hi! Gabby and Devin here, ma & pa, gardener & beekeeper duo. We're here in the Coast Salish lowland forest (Puget Sound) providing sustainable and responsible gardening and beekeeping services to residents and commercial sites. Our shared passion for the environment drives us to nurture the land we share and live on for a greener, healthier future for all. For people & pollinators alike. We strive to help you create a space you feel good in, where you can grow a healthy relationship with nature, a place you feel like you can escape and relax in right outside your door. Through pollinator focused gardening and sustainable beekeeping we believe everyone can bring the natural world back home. We hope you’ll join us on this journey to help make the Earth a bit more green again one garden at a time.
                     </p>
                 </Col>
@@ -196,7 +189,8 @@ function LandingPage() {
         </div>
         <div className="section section-dark landing-section" id="contact-us">
           <ContactForm/>
-          <p className="text-center form-call-us">Need to chat sooner? Give us a call <i className="fa fa-phone" />: <a href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a></p>
+          <p className="text-center form-call-us">Free Pollinator & Insect Identification - <a className="contact-form-link" href="mailto:info@abovebelowbgs.com" alt="send an email">Send an email</a> titled “Gabby’s Bug Box!”</p>
+          <p className="text-center form-call-us">Need to chat sooner? Give us a call <i className="fa fa-phone" />: <a className="contact-form-link" href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a></p>
         </div>
       </div>
       <DemoFooter />
