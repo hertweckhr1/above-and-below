@@ -102,7 +102,8 @@ function LandingPage() {
                       {beeServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                     </ul>
                   </CardBody>
-                  <CardFooter>
+                  {/* hvs add back in */}
+                  {/* <CardFooter>
                     <Button
                       className="btn-round"
                       color="default"
@@ -111,7 +112,7 @@ function LandingPage() {
                     >
                       See detailed service list and pricing
                     </Button>
-                  </CardFooter>
+                  </CardFooter> */}
                 </Card>
               </Col>
               <Col md="4">
