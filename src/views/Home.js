@@ -27,6 +27,7 @@ import {
   Container,
   Row,
   Col,
+  CardFooter,
 } from "reactstrap";
 
 // core components
@@ -82,7 +83,7 @@ function LandingPage() {
       <div className="main">
         <div className="section text-center" id="services">
           <Container className="services">
-            <h2 className="title">Services</h2>
+            <h2 className="title">Services Overview</h2>
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
@@ -101,6 +102,16 @@ function LandingPage() {
                       {beeServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                     </ul>
                   </CardBody>
+                  <CardFooter>
+                    <Button
+                      className="btn-round"
+                      color="default"
+                      href="/beekeeping"
+                      type="button"
+                    >
+                      See detailed service list and pricing
+                    </Button>
+                  </CardFooter>
                 </Card>
               </Col>
               <Col md="4">
@@ -129,6 +140,17 @@ function LandingPage() {
                       {gardenServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                     </ul>
                   </CardBody>
+                  <CardFooter>
+                  <Button
+                    className="btn-round"
+                    color="default"
+                    outline
+                    type="button"
+                    onClick={() => document.getElementById("contact-us").scrollIntoView({behavior: "smooth"})}
+                  >
+                    Contact us for full service list and pricing
+                  </Button>
+                  </CardFooter>
                 </Card>
               </Col>
               <Col md="4">
@@ -151,7 +173,7 @@ function LandingPage() {
                 </Card>
               </Col>
             </Row>
-            <Button
+            {/* <Button
               className="btn-round"
               color="default"
               outline
@@ -159,7 +181,7 @@ function LandingPage() {
               onClick={() => document.getElementById("contact-us").scrollIntoView({behavior: "smooth"})}
             >
               Contact us for full service list and pricing
-            </Button>
+            </Button> */}
           </Container>
         </div>
         <div className="section section-dark text-center" id="who-we-are">
@@ -191,6 +213,18 @@ function LandingPage() {
           <ContactForm/>
           <p className="text-center form-call-us">Free Pollinator & Insect Identification - <a className="contact-form-link" href="mailto:gabby@abovebelowbgs.com" alt="send an email">Send an email</a> titled “Gabby’s Bug Box!”</p>
           <p className="text-center form-call-us">Need to chat sooner? Give us a call <i className="fa fa-phone" />: <a className="contact-form-link" href="tel:206-512-9996" alt="Call 206-512-9996">206-512-9996</a></p>
+          <div className="form-call-us text-center">
+            <h6>Hours</h6>
+            <p>
+              In Season (Mar - Oct): 8am-6pm Mon-Fri
+              <ul>
+                <li>*Swarm calls on weekends! </li>
+              </ul>
+            </p>
+            <p>
+              Off Season (Nov - Feb): 8am-6pm Mon-Fri 
+            </p>
+          </div>
         </div>
       </div>
       <DemoFooter />

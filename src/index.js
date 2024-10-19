@@ -31,6 +31,8 @@ import "assets/demo/demo.css?v=1.3.0";
 // import ProfilePage from "views/examples/ProfilePage.js";
 // import RegisterPage from "views/examples/RegisterPage.js";
 import Home from "views/Home.js";
+import Beekeeping from "views/Beekeeping.js";
+import NucleoIcons from "views/NucleoIcons";
 // others
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -40,6 +42,9 @@ root.render(
     <Routes>
       {/* <Route path="/index" element={<Index />} /> */}
       <Route path="*" element={<Home />} />
+      {/* <Route path="/home" element={<Home />} /> */}
+      <Route path="/beekeeping" element={<Beekeeping/>} />
+      <Route path="/nucleo-icons" element={<NucleoIcons />} />
       {/* <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
