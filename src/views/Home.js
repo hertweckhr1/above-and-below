@@ -102,7 +102,7 @@ function LandingPage() {
                       {beeServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                     </ul>
                   </CardBody>
-                  <CardFooter>
+                  <CardFooter className="services-card-footer">
                     <Button
                       className="btn-round"
                       color="default"
@@ -141,7 +141,7 @@ function LandingPage() {
                       {gardenServices.map((service) => <li style={{textAlign: 'left'}} className="services-list-item">{service}</li>)}
                     </ul>
                   </CardBody>
-                  <CardFooter>
+                  <CardFooter className="services-card-footer">
                   <Button
                     className="btn-round"
                     color="default"

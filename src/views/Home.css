@@ -31,4 +31,8 @@
     color: lightgray;
 }
 
+.services-card-footer {
+    padding-top: 0px !important;
+}
+
 
