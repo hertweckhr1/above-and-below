@@ -107,6 +107,7 @@ function LandingPage() {
                       className="btn-round"
                       color="default"
                       href="/beekeeping"
+                      outline
                       type="button"
                     >
                       See detailed service list and pricing
