@@ -35,4 +35,8 @@
     padding-top: 0px !important;
 }
 
+.hours-list {
+    list-style-type: none;
+}
+
 

@@ -218,7 +218,7 @@ function LandingPage() {
             <h6>Hours</h6>
             <p>
               In Season (Mar - Oct): 8am-6pm Mon-Fri
-              <ul>
+              <ul className="hours-list">
                 <li>*Swarm calls on weekends! </li>
               </ul>
             </p>
