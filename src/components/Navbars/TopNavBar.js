@@ -31,10 +31,10 @@ import {
   Nav,
   Container,
   Button,
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from "reactstrap";
 import './TopNavBar.css';
 
@@ -104,7 +104,7 @@ function TopNavBar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            {/* <UncontrolledDropdown nav inNavbar>
+            <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Services
               </DropdownToggle>
@@ -112,12 +112,12 @@ function TopNavBar() {
                 <DropdownItem className="nav-dropdown-item" onClick={() => document.getElementById("services").scrollIntoView({behavior: "smooth"})}>Overview</DropdownItem>
                 <DropdownItem className="nav-dropdown-item" href="/beekeeping">Beekeeping</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown> */}
-            <NavItem>
+            </UncontrolledDropdown>
+            {/* <NavItem>
               <NavLink href='#' onClick={() => document.getElementById("services").scrollIntoView({behavior: "smooth"})}>
                 Services
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink
                 href="#"
