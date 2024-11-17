@@ -223,7 +223,7 @@ function LandingPage() {
               </ul>
             </p>
             <p>
-              Off Season (Nov - Feb): 8am-6pm Mon-Fri 
+              Off Season (Nov - Feb): 10am-4:30pm Mon-Fri 
             </p>
           </div>
         </div>

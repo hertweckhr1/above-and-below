@@ -95,11 +95,14 @@ function Beekeeping() {
                         <Row>
                             <Col className="ml-auto mr-auto" lg="9" md="8" xs="8">
                                 <h6>
-                                    Inspection and Transportation
+                                    Inspection Transportation
+                                    <br />
+                                    <small>Transportation calculated from Burien</small>
                                 </h6>
                             </Col>
                             <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
-                                <h6 className="text-right">$30 +30 miles</h6>
+                                <h6 className="text-right">Free &lt;30 miles</h6>
+                                <h6 className="text-right">$30 &gt;30 miles</h6>
                             </Col>
                         </Row>
                     </li>
