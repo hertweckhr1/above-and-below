@@ -55,10 +55,10 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Above & Below</h1>
-            <h3>
-              Bee & Garden Services
-            </h3>
+            <h1>Northwest Hive & Habitat</h1>
+            <h4 className="motto-subtext">
+              Please note: we've updated our business name and are currently in the process of updating our website. Stay tuned!
+            </h4>
           </div>
         </Container>
       </div>
