@@ -57,7 +57,7 @@ function LandingPageHeader() {
           <div className="motto text-center">
             <h1>Northwest Hive & Habitat</h1>
             <h4 className="motto-subtext">
-              Please note: we've updated our business name and are currently in the process of updating our website. Stay tuned!
+              Please note: we have updated our business name and are currently in the process of updating our website. Stay tuned!
             </h4>
           </div>
         </Container>
